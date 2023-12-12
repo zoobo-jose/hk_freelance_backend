@@ -1,6 +1,6 @@
 const http = require('http');
 const mongoose=require('mongoose');
-const app= require('./app');
+const app= require('../app');
 
 mongoose.connect("mongodb+srv://eric:passwordpassword@cluster0.my5omv4.mongodb.net/?retryWrites=true&w=majority",
 {}).then(()=>{
