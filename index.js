@@ -9,6 +9,8 @@ mongoose.connect("mongodb+srv://eric:passwordpassword@cluster0.my5omv4.mongodb.n
 .catch((error)=>{
     console.log("=== > mongo DB not connected",error);
 })
+
 app.set('port',process.env.PORT||4000);
+
 const server= http.createServer(app);
 server.listen(process.env.PORT||4000);
